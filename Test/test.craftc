@@ -1,0 +1,98 @@
+
+Biblio :
+commentaire: tester la déclaration des bibliothèques; 
+    bib : bib1,bib2; 
+    entete : header1,header2; 
+ 
+
+Constantes :  
+commentaire: tester tous les types de variables;
+    x = 4;
+    y = 0.5F;
+    z = "Hello";
+    w = liste< 5, 5.6D, x, 's'>;
+    c = 'a';
+    ll = 410L;
+    constfichier = fichier("C:/users/hp/dektop/fie.txt",'r'); 
+
+
+Variables :  
+commentaire: tester tous les types de variables;  
+    i = 4; 
+    f = 0.5F;
+    s = "Hello";
+    d = 0.4D;
+    r = 'a';
+    l = 410L;
+    varfichier, a; 
+ 
+
+Fonctions : 
+commentaire: tester les fonctions;  
+    fonction1(){
+        return x; 
+    } 
+
+    fonction2(a,b){ 
+        a = a + b;
+        return a; 
+    } 
+
+    fonction3(a,b){
+        a = 5;
+        b = 6;
+    }
+
+
+Principale():
+
+commentaire: test des opérateurs arithmétiques;
+    i = i + 4;
+    i = i - 4;
+    i = i / 4;
+    i = i % 4;
+    i = i * 4;
+    i = i ^ 4;
+
+commentaire: test des opérateurs de comparaison;
+    si (i == 4){}
+    si (i != 4){}
+    si (i <= 4){}
+    si (i < 4){}
+    si (i >= 4){}
+    si (i > 4){}
+
+commentaire: test des opérateurs logiques;
+    si (w<3) & (i==4){}
+    si (i>5) | (w!=4){}
+
+commentaire: test de la condition si() sinonSi() sinon;
+    si ( i == 4){
+        x = x + w[1];
+    }sinonSi( i > 4){
+        x = (x - x) % a;
+    }
+    sinon {
+    	return 4;
+    }
+
+commentaire: test des boucles tantQue() et faire tantQue();
+    tantQue( i == 0){
+    	a = fonction2(i,b);
+    }
+
+    faire {
+    	w[i]= x % i;
+    }tantQue(i !=4);
+
+commentaire: test de la boucle pour i dans (1,n) ;
+    pour i dans (1, 10){
+    	a = w[i];
+    }
+    pour j dans (1, x){
+    	fonction3(j, x);
+    }
+
+commentaire: test d'appel de fonctions;
+    t = fonction1(); 
+    t = fonction2(y, x); 
